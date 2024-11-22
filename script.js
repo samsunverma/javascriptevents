@@ -17,3 +17,12 @@ const keyboardMessage = document.getElementById("keyboard-message");
 keyboardInput.addEventListener("keyup", (event) => {
   keyboardMessage.textContent = `Last key pressed: ${event.key}`;
 });
+
+// Form Events
+const exampleForm = document.getElementById("example-form");
+const formMessage = document.getElementById("form-message");
+
+exampleForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  formMessage.textContent = "Form submitted successfully!";
+});
